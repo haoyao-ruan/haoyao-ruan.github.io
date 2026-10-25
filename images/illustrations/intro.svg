@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" width="520" height="340" role="img">
+
+<rect x="0" y="0" width="520" height="340" fill="none"/>
+<rect x="340" y="40" width="130" height="110" rx="8" fill="#dfe6e9"/>
+<rect x="350" y="50" width="110" height="90" rx="4" fill="#eaf2ff"/>
+<path d="M350,120 C380,95 420,110 460,90 L460,140 L350,140 Z" fill="#a29bfe" opacity="0.6"/>
+<circle cx="440" cy="72" r="10" fill="#ffeaa7"/>
+<rect x="60" y="250" width="400" height="12" rx="4" fill="#b2bec3"/>
+<rect x="80" y="262" width="12" height="70" fill="#b2bec3"/><rect x="430" y="262" width="12" height="70" fill="#b2bec3"/>
+<!-- plant -->
+<rect x="380" y="214" width="34" height="36" rx="4" fill="#fab1a0"/>
+<path d="M397,214 C380,190 372,170 392,160 C400,180 398,200 397,214 Z" fill="#55efc4"/>
+<path d="M397,214 C410,186 424,176 428,166 C426,190 410,206 397,214 Z" fill="#00b894"/>
+<!-- chair -->
+<rect x="150" y="262" width="14" height="60" fill="#b2bec3"/>
+<rect x="120" y="318" width="74" height="10" rx="5" fill="#b2bec3"/>
+<!-- body sitting -->
+<path d="M205,246 L205,200 C205,170 250,170 250,200 L250,246 Z" fill="#6c5ce7"/>
+<path d="M180,250 L205,250 L205,210 C205,196 190,196 185,210 Z" fill="#6c5ce7"/>
+<path d="M250,250 L275,250 L272,205 C270,194 255,196 253,210 Z" fill="#6c5ce7"/>
+<circle cx="182" cy="248" r="8" fill="#f3c6a5"/><circle cx="276" cy="248" r="8" fill="#f3c6a5"/>
+
+<g transform="translate(228,160) scale(1.0)">
+  <path d="M-30,-8 C-30,-40 30,-40 30,-8 L30,12 C30,22 20,24 15,20 L15,0 C14,-6 6,-12 0,-12 C-6,-12 -14,-6 -15,0 L-15,20 C-20,24 -30,22 -30,12 Z" fill="#2d2a32"/>
+  <ellipse cx="0" cy="2" rx="18" ry="22" fill="#f3c6a5"/>
+  <path d="M-19,-6 C-16,-28 16,-28 19,-6 C12,-12 6,-18 0,-18 C-8,-18 -14,-10 -19,-6 Z" fill="#2d2a32"/>
+  <circle cx="-7" cy="3" r="1.8" fill="#2d2a32"/><circle cx="7" cy="3" r="1.8" fill="#2d2a32"/>
+  <path d="M-5,12 Q0,16 5,12" stroke="#c0785a" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <circle cx="-11" cy="9" r="3" fill="#f5a9a3" opacity="0.6"/><circle cx="11" cy="9" r="3" fill="#f5a9a3" opacity="0.6"/>
+</g>
+<rect x="196" y="236" width="68" height="14" fill="#2d3436"/>
+<!-- laptop -->
+<path d="M172,250 L290,250 L296,236 L178,236 Z" fill="#b2bec3"/>
+<rect x="190" y="192" width="90" height="46" rx="4" fill="#2d2a32"/>
+<rect x="196" y="198" width="78" height="34" rx="2" fill="#dfe6ff"/>
+<path d="M204,224 L214,214 L222,220 L234,208 L244,216 L256,206" stroke="#6c5ce7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<!-- mug -->
+<rect x="306" y="232" width="20" height="18" rx="3" fill="#a29bfe"/><path d="M326,236 q8,0 8,6 q0,6 -8,6" stroke="#a29bfe" stroke-width="3" fill="none"/>
+<path d="M312,224 q3,-6 0,-10 M318,224 q3,-6 0,-10" stroke="#b2bec3" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+</svg>

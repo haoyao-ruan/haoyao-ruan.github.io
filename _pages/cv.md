@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<img class="illo illo-right" src="/images/illustrations/cv.svg" alt="">
+
 Available June 2027 (estimated). TN eligible (USMCA Statistician). A PDF version is available [here](/files/CV_Haoyao_Ruan.pdf).
 
 Education

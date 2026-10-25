@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+<img class="illo illo-right" src="/images/illustrations/intro.svg" alt="">
+
 🎓 Ph.D. Candidate &nbsp;·&nbsp; 📊 Statistics & Data Science &nbsp;·&nbsp; 🏛 UT Arlington &nbsp;·&nbsp; 📍 Dallas, TX
 
 I am a Ph.D. candidate in Statistics and Data Science at the **University of Texas at Arlington**, expected to graduate in summer 2027. My dissertation develops **Bayesian models for partially observed and aggregate data**.
@@ -17,6 +19,8 @@ I hold an M.Sc. in Statistics from **Simon Fraser University** (2019) and a B.Sc
 
 Research Interests
 ======
+
+<img class="illo illo-center" src="/images/illustrations/research.svg" alt="">
 
 <div class="interest-grid">
   <div class="interest-card"><div class="interest-icon">🎲</div><h3>Bayesian Hierarchical Models</h3><p>MCMC based inference for partially observed and aggregate data, including Bayesian aggregation of peer and self rankings.</p></div>
@@ -29,6 +33,8 @@ Research Interests
 
 Latest News
 ======
+
+<img class="illo illo-right illo-small" src="/images/illustrations/news.svg" alt="">
 
 <ul class="news-list">
 {% for post in site.posts limit:8 %}
