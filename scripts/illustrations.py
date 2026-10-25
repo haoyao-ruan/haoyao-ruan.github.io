@@ -15,42 +15,57 @@ def head(x,y,s=1.0):
   <path d="M21,0 C24,12 22,24 15,32 L9,32 C14,22 15,10 13,0 Z" fill="{HAIR}"/>
 </g>'''
 
-# ---------- intro: sitting on the desk edge, legs crossed, monitor at right ----------
+# ---------- intro: sitting on a wooden desk, monitor and plants ----------
+WOOD="#c9a078"; WOODL="#dcb98f"; WOODD="#a97c54"; POT="#e07a5f"; LEAF="#3fa66b"; LEAFD="#2d7a4f"; LEAFL="#6cc48f"
 intro = svg(520,360,f'''
-<!-- desk -->
-<rect x="150" y="232" width="340" height="12" rx="3" fill="{GREY2}"/>
-<rect x="420" y="244" width="70" height="116" fill="{GREY}"/>
-<rect x="432" y="262" width="46" height="6" rx="3" fill="{NAVY}"/><rect x="432" y="296" width="46" height="6" rx="3" fill="{NAVY}"/><rect x="432" y="330" width="46" height="6" rx="3" fill="{NAVY}"/>
-<rect x="222" y="244" width="78" height="116" fill="{GREY}"/>
-<rect x="236" y="262" width="50" height="6" rx="3" fill="{NAVY}"/><rect x="236" y="296" width="50" height="6" rx="3" fill="{NAVY}"/><rect x="236" y="330" width="50" height="6" rx="3" fill="{NAVY}"/>
-<!-- monitor -->
+<!-- floor plant, left -->
+<path d="M96,232 C70,200 66,160 92,140 C104,170 102,204 96,232 Z" fill="{LEAF}"/>
+<path d="M96,232 C116,200 130,176 142,170 C136,206 118,226 96,232 Z" fill="{LEAFD}"/>
+<path d="M96,232 C76,212 60,196 58,182 C78,190 92,208 96,232 Z" fill="{LEAFL}"/>
+<path d="M96,232 C100,196 112,176 120,160 C122,196 110,220 96,232 Z" fill="{LEAFD}" opacity="0.8"/>
+<path d="M70,230 L122,230 L114,300 L78,300 Z" fill="{POT}"/><rect x="66" y="226" width="60" height="10" rx="3" fill="#c9644c"/>
+<!-- desk: wood top -->
+<rect x="150" y="232" width="340" height="14" rx="3" fill="{WOOD}"/>
+<rect x="150" y="232" width="340" height="4" rx="2" fill="{WOODL}"/>
+<path d="M180,240 L260,240 M300,240 L360,240 M400,240 L470,240" stroke="{WOODD}" stroke-width="1.2" opacity="0.6"/>
+<rect x="420" y="246" width="70" height="114" fill="{WOOD}"/>
+<rect x="420" y="246" width="70" height="114" fill="none" stroke="{WOODD}" stroke-width="2"/>
+<line x1="420" y1="284" x2="490" y2="284" stroke="{WOODD}" stroke-width="2"/><line x1="420" y1="322" x2="490" y2="322" stroke="{WOODD}" stroke-width="2"/>
+<rect x="444" y="263" width="22" height="5" rx="2" fill="{WOODD}"/><rect x="444" y="301" width="22" height="5" rx="2" fill="{WOODD}"/><rect x="444" y="339" width="22" height="5" rx="2" fill="{WOODD}"/>
+<rect x="150" y="246" width="12" height="114" fill="{WOOD}"/><rect x="150" y="246" width="12" height="114" fill="none" stroke="{WOODD}" stroke-width="2"/>
+<!-- monitor with a chart -->
 <rect x="318" y="118" width="124" height="86" rx="6" fill="{NAVY}"/>
 <rect x="324" y="124" width="112" height="70" rx="3" fill="{WHITE}"/>
-<g fill="{ACC}">
-<rect x="334" y="136" width="30" height="5" rx="2"/><rect x="370" y="136" width="18" height="5" rx="2"/><rect x="394" y="136" width="26" height="5" rx="2"/>
-<rect x="340" y="148" width="22" height="5" rx="2"/><rect x="368" y="148" width="40" height="5" rx="2"/>
-<rect x="340" y="160" width="46" height="5" rx="2"/><rect x="392" y="160" width="14" height="5" rx="2"/>
-<rect x="334" y="172" width="18" height="5" rx="2"/><rect x="358" y="172" width="34" height="5" rx="2"/><rect x="398" y="172" width="22" height="5" rx="2"/>
-</g>
+<path d="M334,184 L334,134 M334,184 L428,184" stroke="{GREY2}" stroke-width="2"/>
+<path d="M338,182 C356,180 364,160 374,142 C384,124 392,124 400,142 C410,162 418,180 426,182" stroke="{ACC}" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M338,182 C356,180 364,160 374,142 C384,124 392,124 400,142 C410,162 418,180 426,182 Z" fill="{ACCL}" opacity="0.5"/>
 <rect x="372" y="204" width="16" height="18" fill="{NAVY}"/><rect x="352" y="220" width="56" height="8" rx="3" fill="{NAVY}"/>
-<rect x="306" y="222" width="30" height="8" rx="3" fill="{NAVY2}"/>
-<!-- back leg: hanging straight down -->
-<path d="M214,236 L204,338" stroke="{NAVY}" stroke-width="24" stroke-linecap="round" fill="none"/>
-<path d="M196,336 C188,338 178,346 182,354 L214,354 L212,336 Z" fill="{DARK}"/>
-<!-- torso: open jacket over an accent top, slight slouch -->
-<path d="M192,242 C184,204 188,152 208,126 L242,126 C260,152 262,204 250,242 Z" fill="{NAVY}"/>
-<path d="M214,130 L238,130 C240,170 238,212 236,242 L218,242 C214,212 212,170 214,130 Z" fill="{ACC}"/>
-<path d="M208,126 L218,130 C208,160 206,206 214,242 L192,242 C184,204 188,152 208,126 Z" fill="{NAVY2}"/>
-<path d="M242,126 L234,130 C244,160 246,206 238,242 L250,242 C262,204 260,152 242,126 Z" fill="{NAVY}"/>
-<rect x="216" y="104" width="18" height="28" rx="5" fill="{SKIN}"/>
-{head(225,80,1.12)}
-<!-- front leg: thigh out to the right, shin down -->
-<path d="M232,236 L290,246 L296,330" stroke="{NAVY}" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-<path d="M286,328 C278,332 272,340 278,346 L312,346 L308,326 Z" fill="{DARK}"/>
-<!-- arms: hands resting on the front thigh -->
-<path d="M200,142 C186,176 190,212 212,244" stroke="{NAVY}" stroke-width="17" stroke-linecap="round" fill="none"/>
-<path d="M248,142 C262,176 258,212 250,244" stroke="{NAVY}" stroke-width="17" stroke-linecap="round" fill="none"/>
-<ellipse cx="216" cy="250" rx="10" ry="8" fill="{SKIN}"/><ellipse cx="254" cy="250" rx="10" ry="8" fill="{SKIN}"/>
+<!-- small plant on desk -->
+<rect x="286" y="212" width="22" height="20" rx="3" fill="{POT}"/>
+<path d="M297,212 C290,200 288,190 296,184 C300,194 299,204 297,212 Z" fill="{LEAF}"/>
+<path d="M297,212 C304,202 310,196 314,194 C312,204 306,210 297,212 Z" fill="{LEAFD}"/>
+<path d="M297,212 C290,206 284,200 282,196 C290,198 295,204 297,212 Z" fill="{LEAFL}"/>
+<!-- figure: one continuous navy body -->
+<g fill="{NAVY}" stroke="{NAVY}" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M208,120 C196,122 188,138 188,158 L186,252 L254,252 L252,158 C252,138 244,122 232,120 Z" stroke="none"/>
+  <ellipse cx="220" cy="252" rx="36" ry="16" stroke="none"/>
+  <path d="M210,252 L203,340" stroke-width="26" fill="none"/>
+  <path d="M232,250 L288,254 L296,332" stroke-width="26" fill="none"/>
+</g>
+<!-- shoes -->
+<path d="M194,338 C184,342 176,350 182,356 L216,356 L216,338 Z" fill="{DARK}"/>
+<path d="M286,330 C276,334 270,342 276,348 L312,348 L310,328 Z" fill="{DARK}"/>
+<!-- jacket opening with accent top -->
+<path d="M212,120 C214,160 212,210 214,252 L228,252 C230,210 228,160 230,120 Z" fill="{ACC}"/>
+<path d="M208,120 L216,120 C210,160 208,212 216,252 L188,252 L188,158 C188,138 196,122 208,120 Z" fill="{NAVY2}"/>
+<!-- neck and collar -->
+<rect x="213" y="98" width="16" height="30" rx="5" fill="{SKIN}"/>
+<path d="M206,124 L214,110 L222,128 Z" fill="{NAVY2}"/><path d="M234,124 L228,110 L220,128 Z" fill="{NAVY}"/>
+{head(221,80,1.12)}
+<!-- arms resting on the front thigh -->
+<path d="M199,142 C186,176 190,212 210,248" stroke="{NAVY2}" stroke-width="17" stroke-linecap="round" fill="none"/>
+<path d="M243,142 C258,176 256,212 250,248" stroke="{NAVY}" stroke-width="17" stroke-linecap="round" fill="none"/>
+<ellipse cx="215" cy="254" rx="10" ry="8" fill="{SKIN}"/><ellipse cx="253" cy="254" rx="10" ry="8" fill="{SKIN}"/>
 ''')
 
 open("images/illustrations/intro.svg","w").write(intro)
