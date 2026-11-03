@@ -3,4 +3,18 @@
 <!-- Support for MathJax -->
 <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
 
+<!-- Back to top -->
+<button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<script>
+  (function () {
+    var b = document.getElementById('back-to-top');
+    if (!b) return;
+    function t() { b.classList.toggle('is-visible', window.scrollY > 400); }
+    window.addEventListener('scroll', t, { passive: true }); t();
+    b.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  })();
+</script>
+
 <!-- end custom footer snippets -->

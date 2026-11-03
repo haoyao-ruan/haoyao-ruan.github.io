@@ -34,3 +34,45 @@
 @media (max-width: 600px) {
   .illo-right { float: none; max-width: 100%; width: 260px; margin: 0 auto 1em; }
 }
+
+/* Unified line icons for research cards */
+$accent: #6c5ce7;
+svg.interest-icon {
+  width: 30px; height: 30px;
+  fill: none; stroke: $accent; stroke-width: 1.7;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* Sidebar link hover */
+.author__urls a {
+  border-radius: 4px;
+  transition: color .15s ease, background-color .15s ease;
+  &:hover { color: $accent; background: rgba(108, 92, 231, .08); text-decoration: none; }
+  &:hover i { color: $accent; }
+}
+
+/* Publications list */
+.pub-authors { margin: .2em 0; font-size: .85em; }
+.pub-venue { margin: 0 0 .6em; font-size: .85em; color: var(--global-text-color-light, #777); }
+
+/* News timeline */
+.timeline-year { margin-top: 1.2em; border-bottom: none; color: $accent; }
+.timeline { list-style: none; margin: 0 0 1em; padding-left: 0; border-left: 2px solid var(--global-border-color, #e5e5e5); }
+.timeline-item { position: relative; display: flex; gap: 1em; padding: 0 0 1.1em 1.4em; font-size: .95em; }
+.timeline-item::before {
+  content: ""; position: absolute; left: -7px; top: .45em;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--global-bg-color, #fff); border: 2px solid $accent;
+}
+.timeline-date { flex: 0 0 2.8em; font-weight: 600; color: var(--global-text-color-light, #777); }
+
+/* Back to top */
+.back-to-top {
+  position: fixed; right: 20px; bottom: 20px; z-index: 50;
+  width: 42px; height: 42px; border-radius: 50%; border: 0; padding: 0;
+  background: $accent; box-shadow: 0 2px 8px rgba(0,0,0,.2); cursor: pointer;
+  opacity: 0; visibility: hidden; transition: opacity .2s ease;
+  &.is-visible { opacity: .9; visibility: visible; }
+  &:hover { opacity: 1; }
+  svg { width: 20px; height: 20px; fill: none; stroke: #fff; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; vertical-align: middle; }
+}
