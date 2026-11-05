@@ -113,7 +113,10 @@ def render(work):
     title = work["title"].strip()
     date = work["publication_date"]
     venue = venue_line(work)
+    section = category(work, venue)
     authors = author_line(work)
+    if section == "linguistics":
+        authors = re.sub(r"</?b>", "", authors)
     stem = f"{date}-{slugify(title)}"
     citation = f"{authors} ({date[:4]}). {title}. <i>{venue}</i>."
     quote = lambda value: json.dumps(value, ensure_ascii=False)
@@ -121,7 +124,7 @@ def render(work):
         "---",
         f"title: {quote(title)}",
         "collection: publications",
-        f"category: {category(work, venue)}",
+        f"category: {section}",
         f"permalink: /publication/{stem}",
         f"date: {date}",
         f"authors: {quote(authors)}",

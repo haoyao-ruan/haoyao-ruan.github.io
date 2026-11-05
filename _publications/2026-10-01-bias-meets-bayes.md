@@ -1,11 +1,12 @@
 ---
-title: 'Bias meets Bayes: Bayesian aggregation for peer and self ranking'
+title: 'Bias meets Bayes: Bayesian aggregation for peer and self-ranking'
 collection: publications
 category: methods
 permalink: /publication/2026-10-01-bias-meets-bayes
 date: 2026-10-01
 authors: '<b>Ruan H</b>, Wang K, Lim J, Wang X'
-venue: 'Journal of the Royal Statistical Society Series A (accepted)'
+venue: 'Journal of the Royal Statistical Society Series A'
 doi: '10.1093/jrsssa/qnag122'
-citation: 'Ruan, H., Wang, K., Lim, J., &amp; Wang, X. (2026). Bias meets Bayes: Bayesian aggregation for peer and self ranking [Accepted]. <i>Journal of the Royal Statistical Society Series A</i>.'
+paperurl: 'https://doi.org/10.1093/jrsssa/qnag122'
+citation: 'Ruan, H., Wang, K., Lim, J., &amp; Wang, X. (2026). Bias meets Bayes: Bayesian aggregation for peer and self-ranking. <i>Journal of the Royal Statistical Society Series A</i>. Advance online publication. https://doi.org/10.1093/jrsssa/qnag122'
 ---
