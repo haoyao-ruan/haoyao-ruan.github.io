@@ -52,7 +52,7 @@ svg.interest-icon {
 }
 
 /* Publications list */
-.archive__item-title.pub-title { font-size: 1em; line-height: 1.4; }
+.archive__item-title.pub-title { font-size: 1em; font-weight: normal; line-height: 1.4; }
 .pub-authors { margin: .2em 0; font-size: .85em; }
 .pub-venue { margin: 0 0 .6em; font-size: .85em; color: var(--global-text-color-light, #777); }
 
