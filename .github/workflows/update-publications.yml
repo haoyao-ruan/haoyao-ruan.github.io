@@ -1,0 +1,36 @@
+name: Sync publications from OpenAlex
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Add new publications
+        run: python3 scripts/sync_publications.py
+
+      - name: Commit, push and redeploy if anything was added
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add _publications/
+          if git diff --staged --quiet; then
+            echo "No new publications."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Add new publications from OpenAlex"
+          git push
+          # Pushes made with the workflow token do not trigger the deploy workflow.
+          gh workflow run jekyll.yml --ref "${{ github.ref_name }}"

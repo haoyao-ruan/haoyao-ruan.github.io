@@ -11,12 +11,11 @@ redirect_from:
 
 I am a Ph.D. candidate in Statistics and Data Science at the **University of Texas at Arlington**, expected to graduate in summer 2027. My dissertation develops **Bayesian models for partially observed and aggregate data**.
 
-Before the Ph.D., I worked as a full time statistician in Canada for over three years.
+Before the Ph.D., I worked as a full time statistician in Canada for over three years; in summer 2026 I interned with Novartis.
 
+* **Novartis**, Advanced Quantitative Sciences (intern, summer 2026): built a Shiny app to monitor survival data maturity across oncology trials and modelled future event timing with a piecewise exponential model.
 * **Cytel**, Real World Evidence and Advanced Analytics: oncology evidence for pharma sponsors, including indirect treatment comparisons (MAIC, STC), external control arms with Bayesian borrowing, and survival analysis.
 * **ERM**: multivariate models for environmental and health risk assessments, with automated reporting in Shiny and R Markdown.
-
-In summer 2026 I interned with **Novartis Advanced Quantitative Sciences**, building a Shiny app that tracks survival data maturity and predicts events in oncology trials.
 
 I hold an M.Sc. in Statistics from **Simon Fraser University** (2019) and a B.Sc. in Applied Statistics with Distinction from the **University of Toronto** (2017).
 
