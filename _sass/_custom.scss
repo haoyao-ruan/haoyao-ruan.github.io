@@ -59,6 +59,17 @@ svg.interest-icon {
 /* Section headings are the same size on every page, whether written as h1 or h2 */
 #main h1:not(.page__title) { font-size: 1.25em; }
 
+/* Page width: use more of the window, and drop the empty right-hand column on the home page */
+$site-max-width: 1600px;
+@media (min-width: $x-large) {
+  #main,
+  .masthead__inner-wrap,
+  .page__footer footer { max-width: $site-max-width; }
+}
+@media (min-width: $large) {
+  .page { padding-right: 0; }
+}
+
 /* News timeline */
 .timeline-year { margin-top: 1.2em; border-bottom: none; color: $accent; }
 .timeline { list-style: none; margin: 0 0 1em; padding-left: 0; border-left: 2px solid var(--global-border-color, #e5e5e5); }
