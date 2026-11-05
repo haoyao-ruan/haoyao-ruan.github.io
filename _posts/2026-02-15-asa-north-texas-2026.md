@@ -1,5 +1,6 @@
 ---
 title: '3rd Place, ASA North Texas student presentations, for the poster “Bayesian binomial decomposition for contaminated counts, with application to oral reading fluency assessment.”'
+headline: '🥉 3rd Place poster, ASA North Texas 2026'
 date: 2026-02-15
 permalink: /posts/2026/02/asa-north-texas-2026/
 ---

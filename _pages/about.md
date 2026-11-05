@@ -40,7 +40,7 @@ Latest News
 
 <ul class="news-list">
 {% for post in site.posts limit:8 %}
-  <li><span class="news-date">{{ post.date | date: "%b %Y" }}</span> <a href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title }}</a></li>
+  <li><span class="news-date">{{ post.date | date: "%b %Y" }}</span> <a href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.headline | default: post.title }}</a></li>
 {% endfor %}
 </ul>
 

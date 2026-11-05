@@ -1,5 +1,6 @@
 ---
 title: 'First author paper accepted at the Journal of the Royal Statistical Society Series A: Bias meets Bayes, Bayesian aggregation for peer and self ranking.'
+headline: '📄 First-author paper accepted at JRSS-A'
 date: 2026-10-01
 permalink: /posts/2026/10/jrssa-accepted/
 ---
