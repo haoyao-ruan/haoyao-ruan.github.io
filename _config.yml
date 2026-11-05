@@ -92,8 +92,6 @@ publication_category:
     title: 'Conference Abstracts'
   linguistics:
     title: 'Statistical Collaborations in Linguistics'
-  inprep:
-    title: 'In Preparation'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
