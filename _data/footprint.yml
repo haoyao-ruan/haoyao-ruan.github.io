@@ -1,0 +1,35 @@
+# Places shown on the home page map. Add an entry to add a marker.
+# emoji is the marker itself; each item is one line in the marker's popup.
+- place: "Toronto, ON"
+  emoji: "🎓💼"
+  lat: 43.6629
+  lng: -79.3957
+  items:
+    - "🎓 B.Sc. Applied Statistics, University of Toronto (2013 to 2017)"
+    - "💼 Statistical Consultant, ERM (2019 to 2021)"
+    - "💼 Research Consultant, Cytel (2021 to 2023)"
+- place: "Ottawa, ON"
+  emoji: "💼"
+  lat: 45.4215
+  lng: -75.6972
+  items:
+    - "💼 Data Scientist (Co-op), Statistics Canada (summer 2018)"
+- place: "Burnaby, BC"
+  emoji: "🎓💼"
+  lat: 49.2781
+  lng: -122.9199
+  items:
+    - "🎓 M.Sc. Statistics, Simon Fraser University (2017 to 2019)"
+    - "💼 Research Assistant, SFU Linguistics (2019 to 2023)"
+- place: "Arlington, TX"
+  emoji: "🎓"
+  lat: 32.7299
+  lng: -97.1140
+  items:
+    - "🎓 Ph.D. Statistics and Data Science, University of Texas at Arlington (2023 to present)"
+- place: "East Hanover, NJ"
+  emoji: "💼"
+  lat: 40.8201
+  lng: -74.3649
+  items:
+    - "💼 Biostatistician III (Intern), Novartis (summer 2026)"

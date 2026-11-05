@@ -57,5 +57,5 @@ Presentation Awards and Service
 * 3rd Place, ASA North Texas student presentations, 2026: *Bayesian binomial decomposition for contaminated counts, with application to oral reading fluency assessment*
 * 3rd Place, ASA North Texas student presentations, 2025: *Bias meets Bayes: Bayesian aggregation for peer and self ranking*
 * Best Graduate Poster Presentation, Canadian Statistics Student Conference, 2019: *Covariance-adjusted sparse reduced-rank regression for imaging-genetics data* (M.Sc. thesis)
-* President, National Student Data Corps UTA Chapter, 2025 to present
+* President, National Student Data Corps UTA Chapter, 2025 to 2026
 * Treasurer and Co-founder, ASA Student Chapter at UTA, 2025 to present

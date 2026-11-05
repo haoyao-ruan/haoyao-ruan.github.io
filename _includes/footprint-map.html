@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+<div id="footprint-map" class="footprint-map" role="region" aria-label="Map of places where I have studied and worked"></div>
+<p class="footprint-note">🎓 study · 💼 work. Select a marker for details.</p>
+<noscript><ul>{% for p in site.data.footprint %}<li><strong>{{ p.place }}</strong>: {{ p.items | join: "; " }}</li>{% endfor %}</ul></noscript>
+<script type="application/json" id="footprint-data">{{ site.data.footprint | jsonify }}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+<script defer src="/assets/js/footprint-map.js"></script>

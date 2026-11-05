@@ -45,3 +45,8 @@ Latest News
 </ul>
 
 [See all news →](/year-archive/)
+
+Where I've Studied and Worked
+======
+
+{% include footprint-map.html %}
