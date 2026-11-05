@@ -46,11 +46,7 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
-* **Statistical collaborations in linguistics:** Speech Communication (2025); Int J Speech Technol (2023, two papers); Speech Prosody (2026, two papers).
+See the full list on the [Publications](/publications/) page.
 
 Presentation Awards and Service
 ======
