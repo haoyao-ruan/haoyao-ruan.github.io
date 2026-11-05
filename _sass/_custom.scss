@@ -27,12 +27,12 @@
 }
 
 /* Section illustrations */
-.illo { display: block; height: auto; }
-.illo-right { float: right; width: 280px; max-width: 45%; margin: 0 0 1em 1.5em; }
-.illo-small { width: 220px; }
-.illo-center { width: 100%; max-width: 420px; margin: 0 auto 1.5em; }
+/* Every illustration is drawn on the same 520x340 canvas and shown at the same width */
+.illo { display: block; width: 280px; height: auto; }
+.illo-right { float: right; max-width: 45%; margin: 0 0 1em 1.5em; }
+.illo-center { max-width: 100%; margin: 0 auto 1.5em; }
 @media (max-width: 600px) {
-  .illo-right { float: none; max-width: 100%; width: 260px; margin: 0 auto 1em; }
+  .illo-right { float: none; max-width: 100%; margin: 0 auto 1em; }
 }
 
 /* Unified line icons for research cards */

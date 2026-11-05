@@ -36,7 +36,7 @@ Research Interests
 Latest News
 ======
 
-<img class="illo illo-right illo-small" src="/images/illustrations/news.svg" alt="">
+<img class="illo illo-right" src="/images/illustrations/news.svg" alt="">
 
 <ul class="news-list">
 {% for post in site.posts limit:8 %}

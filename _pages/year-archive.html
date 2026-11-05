@@ -6,7 +6,7 @@ author_profile: true
 
 {% include base_path %}
 
-<img class="illo illo-right illo-small" src="/images/illustrations/news.svg" alt="">
+<img class="illo illo-right" src="/images/illustrations/news.svg" alt="">
 
 {% assign years = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
 {% for y in years %}
