@@ -17,7 +17,7 @@
 .news-list {
   list-style: none;
   margin-left: 0;
-  li { margin-bottom: 0.5em; }
+  li { margin-bottom: 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
 .news-date {
   display: inline-block;
@@ -52,20 +52,23 @@ svg.interest-icon {
 }
 
 /* Publications list */
-.archive__item-title.pub-title { font-size: .9em; line-height: 1.35; }
-.pub-authors { margin: .2em 0; font-size: .78em; }
-.pub-venue { margin: 0 0 .6em; font-size: .78em; color: var(--global-text-color-light, #777); }
+.archive__item-title.pub-title { font-size: 1em; line-height: 1.4; }
+.pub-authors { margin: .2em 0; font-size: .85em; }
+.pub-venue { margin: 0 0 .6em; font-size: .85em; color: var(--global-text-color-light, #777); }
+
+/* Section headings are the same size on every page, whether written as h1 or h2 */
+#main h1:not(.page__title) { font-size: 1.25em; }
 
 /* News timeline */
 .timeline-year { margin-top: 1.2em; border-bottom: none; color: $accent; }
 .timeline { list-style: none; margin: 0 0 1em; padding-left: 0; border-left: 2px solid var(--global-border-color, #e5e5e5); }
-.timeline-item { position: relative; display: flex; gap: 1em; padding: 0 0 1.1em 1.4em; font-size: .95em; }
+.timeline-item { position: relative; display: flex; align-items: baseline; gap: 1em; padding: 0 0 1.1em 1.4em; }
 .timeline-item::before {
   content: ""; position: absolute; left: -7px; top: .45em;
   width: 12px; height: 12px; border-radius: 50%;
   background: var(--global-bg-color, #fff); border: 2px solid $accent;
 }
-.timeline-date { flex: 0 0 2.8em; font-weight: 600; color: var(--global-text-color-light, #777); }
+.timeline-date { flex: 0 0 2.8em; font-size: .85em; font-weight: 600; color: var(--global-text-color-light, #777); }
 
 /* Back to top */
 .back-to-top {
@@ -85,7 +88,7 @@ svg.interest-icon {
   border: 1px solid var(--global-border-color, #e5e5e5); border-radius: 8px;
 }
 html[data-theme="dark"] .footprint-map .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9); }
-.footprint-note { margin: 0 0 1.5em; font-size: 0.8em; color: var(--global-text-color-light, #777); }
+.page__content .footprint-note { margin: 0 0 1.5em; font-size: .85em; color: var(--global-text-color-light, #777); }
 .footprint-pin {
   position: absolute; transform: translate(-50%, -50%);
   padding: 3px 6px; border-radius: 999px;
